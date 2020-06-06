@@ -4,8 +4,11 @@ require __DIR__ . '/vendor/autoload.php';
 use App\InvoiceRepository;
 use App\InvoiceService;
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+//Try to load .env file if exists
+try {
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+} catch (Exception $exception) {}
 
 $router = new App\Router(new App\Request());
 $invoiceRepository = new InvoiceRepository(new InvoiceService());

@@ -35,12 +35,11 @@ class Request implements IRequest
         if ($this->requestMethod === "GET") {
             return;
         }
-
         if ($this->requestMethod == "POST") {
+            $body = [];
 
-            $body = array();
-            foreach ($_POST as $key => $value) {
-                $body[$key] = filter_input(INPUT_POST, $key, FILTER_SANITIZE_SPECIAL_CHARS);
+            foreach (json_decode(file_get_contents('php://input'), true) as $key => $value) {
+                $body[$key] = $value;
             }
 
             return $body;

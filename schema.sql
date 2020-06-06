@@ -8,4 +8,4 @@ CREATE TABLE IF NOT EXISTS `invoices` (
   `article` varchar(100) NOT NULL DEFAULT '',
   `total` varchar(100) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  AUTO_INCREMENT=1;

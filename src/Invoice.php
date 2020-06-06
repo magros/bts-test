@@ -2,7 +2,6 @@
 
 namespace App;
 
-
 class Invoice extends Model
 {
     public $id, $client, $payment_method, $details, $article, $total;

@@ -6,8 +6,7 @@ class InvoiceService extends DBService
 {
     function create(array $data): Model
     {
-        $sql = "insert into invoices values(null, 'bts', 'card', 'fkjajnasf', 'article', '564654');";
-
+        $sql = "insert into invoices values(null, '{$data['client']}', '{$data['payment_method']}', '{$data['details']}', '{$data['article']}', '{$data['total']}');";
         if ($this->connection()->query($sql)) {
             $lastId = $this->connection()->insert_id;
             $result = $this->connection()->query("SELECT * FROM invoices WHERE id = {$lastId}");
@@ -17,7 +16,7 @@ class InvoiceService extends DBService
 
     function findAll(): array
     {
-        $result = $this->connection()->query("SELECT * FROM invoices");
+        $result = $this->connection()->query("SELECT * FROM invoices order by id DESC");
         $results = [];
 
         if ($result->num_rows > 0) {

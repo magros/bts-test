@@ -5,9 +5,7 @@ namespace App\Tests;
 use App\DBService;
 use App\Invoice;
 use App\InvoiceRepository;
-use App\InvoiceService;
 use Mockery;
-use PHPUnit\Framework\TestCase;
 
 class InvoicesTest extends Mockery\Adapter\Phpunit\MockeryTestCase
 {

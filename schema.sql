@@ -1,5 +1,3 @@
-CREATE DATABASE IF NOT EXISTS bts;
-USE bts;
 CREATE TABLE IF NOT EXISTS `invoices` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `client` varchar(100) NOT NULL DEFAULT '',

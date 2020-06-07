@@ -14,7 +14,7 @@ https://salty-ridge-92852.herokuapp.com/
 # Run tests
 After your had clone repository and install dependencies, execute `vendor/bin/phpunit`
 
-#Improvements
+# Improvements
 1. Add form validations when an invoice is created
 2. Add endpoints to edit and delete invoices
 3. Add compatibility for DELETE and PATCH methods in Request.php

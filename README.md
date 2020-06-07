@@ -1,5 +1,6 @@
 # Demo
-https://salty-ridge-92852.herokuapp.com/
+https://salty-ridge-92852.herokuapp.com/ 
+Heroku database takes a few time to load, be patient
 
 # How to install
 1. Clone repository `git clone https://github.com/magros/bts-test.git`

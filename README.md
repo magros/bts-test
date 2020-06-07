@@ -15,7 +15,7 @@ Heroku database takes a few time to load, be patient
 # Run tests
 After your had clone repository and install dependencies, execute `vendor/bin/phpunit`
 
-# Improvements
+# Improvements to be done
 1. Add form validations when an invoice is created
 2. Add endpoints to edit and delete invoices
 3. Add compatibility for DELETE and PATCH methods in Request.php
